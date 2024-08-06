@@ -12,10 +12,10 @@ function App() {
   const generateShortUrl = () => {
     if (!url) return;
 
-    // Generate a short code
+
     const shortCode = Math.random().toString(36).substring(2, 8); 
 
-    // Format the short URL
+  
     const formattedShortUrl = `http://short.url/${shortCode}`;
     setShortUrl(formattedShortUrl);
   };
